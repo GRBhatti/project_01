@@ -2,89 +2,416 @@
 <html lang="en">
 
 <head>
-    <title>Ghulam Rasool's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghulam Rasool | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 
 <body>
-    <!--Header/Navbar-->
+    <!-- HEADER / NAVBAR -->
     <header>
-        <h1>Ghulam Rasool</h1>
-        <nav>
-            <a href="#about" About></a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
-        </nav>
+        <div class="container">
+            <h1><i class="fas fa-code"></i> Ghulam Rasool</h1>
+            <nav>
+                <a href="#home"><i class="fas fa-home"></i> Home</a>
+                <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
+                <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
     </header>
 
-    <!--Hearo Section-->
+    <!-- HERO SECTION -->
     <section id="hero">
-        <div class="hero-text">
-            <h2>Full Stack Web App Developer</h2>
-            <p>Front-End Web Developer specializing in clean, semantic HTML, modern CSS, and Git version control. I turn
-                designs into pixel-perfect, responsive websites.</p>
-            <a href="#contact">Hire Me</a>
-            <a href="#resume">Download CV</a> 
-             </div>
-            <div class="hero-image">
-                <img src="./new image0.jpg" alt="">
-            </div>   
-</section>
-
-    <!--About Section-->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Your about text here.</p>
-</section>
-
-
-<!-- SKILLS SECTION -->
-<section id="skills">
-<h2>Skills</h2>
-<div class="skill-boxes">
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">Git</div>
-</div>
-</section>
-
-
-<!-- PROJECTS SECTION -->
-<section id="projects">
-<h2>Projects</h2>
-<div class="project-grid">
-<div class="project">
-<h3>Project 1</h3>
-<p>Description...</p>
-</div>
-<div class="project">
-<h3>Project 2</h3>
-<p>Description...</p>
-</div>
-</div>
-</section>
-
-
-<!-- CONTACT SECTION -->
-<section id="contact">
-<h2>Contact Me</h2>
-<form>
-<input type="text" placeholder="Your Name" />
-<input type="email" placeholder="Your Email" />
-<textarea placeholder="Message"></textarea>
-<button type="submit">Send</button>
-</form>
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-© 2025 Your Name — All Rights Reserved
-</footer>
-
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3 class="welcome-text">Hello, I'm</h3>
+                    <h1 class="name">Ghulam Rasool</h1>
+                    <h2 class="title">Full Stack Web Developer</h2>
+                    <p class="description">
+                        Front-End Web Developer specializing in clean, semantic HTML, modern CSS, and Git version control. 
+                        I turn designs into pixel-perfect, responsive websites that deliver exceptional user experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Hire Me
+                        </a>
+                        <a href="#projects" class="btn-secondary">
+                            <i class="fas fa-eye"></i> View Projects
+                        </a>
+                        <a href="./Ghulam_Rasool_CV.pdf" download class="btn-outline">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="./new image0.jpg" alt="Ghulam Rasool - Web Developer">
+                        <div class="floating-badge">
+                            <i class="fas fa-star"></i>
+                            <span>3+ Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title"><span>About Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Passionate web developer with expertise in HTML, CSS, and Git. I create beautiful, 
+                        functional websites that not only look great but also perform exceptionally across all devices.
+                    </p>
+                    <p>
+                        My approach combines technical expertise with creative problem-solving to deliver 
+                        solutions that exceed client expectations.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>25+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./premium_photo-1675793715030-0584c8ec4a13.jpeg" alt="About Ghulam Rasool">
+                    <style ="width: 100%; max-width: 400px; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title"><span>My Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress html"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress css"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress js"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Tools & Version Control</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git & GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress git"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>VS Code</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress vscode"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Responsive Design</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress responsive"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title"><span>My Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <img src="./project1.jpg" alt="E-Commerce Website">
+                    </div>
+                    <div class="project-content">
+                        <h3>Modern E-Commerce Website</h3>
+                        <p>A fully responsive online store with shopping cart, product filters, and checkout system.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <img src="./project2.jpg" alt="Portfolio Template">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Template</h3>
+                        <p>A clean, modern portfolio template with dark/light mode and smooth animations.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <img src="./project3.jpg" alt="Dashboard UI">
+                    </div>
+                    <div class="project-content">
+                        <h3>Admin Dashboard UI</h3>
+                        <p>A sleek admin dashboard with charts, tables, and various UI components.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title"><span>Get In Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>theghulamrasool1996@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+92 300 2283631</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><i class="fas fa-code"></i> Ghulam Rasool</h2>
+                    <p>Building the web, one line of code at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ghulam Rasool. All Rights Reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> & <i class="fas fa-code"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const icon = themeToggle.querySelector('i');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent.');
+            contactForm.reset();
+        });
+
+        // Skill Bars Animation
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        bar.style.width = bar.style.width || bar.classList.contains('html') ? '95%' :
+                                          bar.classList.contains('css') ? '90%' :
+                                          bar.classList.contains('js') ? '80%' :
+                                          bar.classList.contains('git') ? '85%' :
+                                          bar.classList.contains('vscode') ? '95%' : '92%';
+                    });
+                }
+            });
+        }, observerOptions);
+
+        observer.observe(document.getElementById('skills'));
+    </script>
 </body>
 
 </html>

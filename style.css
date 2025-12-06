@@ -1,0 +1,261 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: #f3f7ff;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ===== COLOR PALETTE (Professional + Colorful) ===== */
+:root {
+  --primary: #6C63FF;       /* Purple modern */
+  --primary-dark: #574bff;
+  --secondary: #FF6584;     /* Pink accent */
+  --light-bg: #ffffff;
+  --section-bg: #eef1ff;
+  --text-dark: #222;
+  --text-light: #555;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  background: var(--light-bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+header nav a {
+  text-decoration: none;
+  margin-left: 25px;
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: var(--primary);
+}
+
+/* ===== HERO SECTION ===== */
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 70px;
+  background: var(--light-bg);
+}
+
+#hero .hero-text h2 {
+  font-size: 52px;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+#hero .hero-text p {
+  max-width: 450px;
+  margin: 18px 0 25px;
+  color: var(--text-light);
+  font-size: 17px;
+}
+
+#hero .hero-text a {
+  display: inline-block;
+  padding: 12px 28px;
+  margin-right: 12px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(108,99,255,0.35);
+  transition: 0.3s;
+}
+
+#hero .hero-text a:hover {
+  background: var(--primary-dark);
+  box-shadow: 0 6px 25px rgba(108,99,255,0.45);
+  transform: translateY(-3px);
+}
+
+#hero img {
+  width: 390px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+/* ===== ABOUT ===== */
+#about {
+  padding: 90px 70px;
+  background: var(--section-bg);
+}
+
+#about h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 18px;
+}
+
+#about p {
+  max-width: 650px;
+  color: var(--text-light);
+  font-size: 17px;
+}
+
+/* ===== SKILLS SECTION ===== */
+#skills {
+  padding: 90px 70px;
+  background: var(--light-bg);
+}
+
+#skills h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.skill-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+}
+
+.skill {
+  background: var(--section-bg);
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-dark);
+  border: 2px solid var(--primary);
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(108,99,255,0.35);
+}
+
+/* ===== PROJECTS ===== */
+#projects {
+  padding: 90px 70px;
+  background: var(--section-bg);
+}
+
+#projects h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project {
+  background: var(--light-bg);
+  padding: 25px;
+  border-radius: 16px;
+  border-left: 6px solid var(--primary);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.project h3 {
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+/* ===== CONTACT ===== */
+#contact {
+  padding: 90px 70px;
+  background: var(--light-bg);
+}
+
+#contact h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+#contact form {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  font-size: 17px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 10px rgba(255,101,132,0.35);
+}
+
+#contact button {
+  padding: 14px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 6px 20px rgba(108,99,255,0.35);
+}
+
+#contact button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
